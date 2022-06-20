@@ -37,6 +37,7 @@ while not url.endswith('#'):
             imageFile.close()
 
     # Find the URL of the Previous Comic link, and repeat.
+    
         prevLink = bs.select('a[rel="prev"]')[0]
         url = 'http://xkcd.com' + prevLink.get('href')
         print(url)
